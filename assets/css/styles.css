@@ -52,17 +52,26 @@ a {
 
 
 /* ============== Header ============== */
-.header {
+.fix-header {
+    background: #E6F0FF;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+
+.hero-wrap {
     position: relative;
+    display: flex;
+    flex-direction: column;
     background: #E6F0FF;
     height: 100vh;
 }
 
-
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
 }
 
 .navbar ul {
@@ -624,7 +633,7 @@ a {
     background: #F9F9F9;
 }
 
-.footer .social-link +.social-link {
+.footer .social-link+.social-link {
     margin-left: 16px;
 }
 
