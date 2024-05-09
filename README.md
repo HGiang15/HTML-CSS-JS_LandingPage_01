@@ -1,4 +1,4 @@
 ## Project 01 - Bensik.
 
 - Language: HTML/CSS
-- Other: Responsive
+- Other: Responsive (Update coming soon...)
