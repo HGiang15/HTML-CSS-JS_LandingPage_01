@@ -4,6 +4,9 @@
 
 :root {
     --primary-color: #0F1B4C;
+    --white-color: #FFF;
+    --text-color: #5A6473;
+    --title-color: #000339;
 }
 
 html,
@@ -41,7 +44,7 @@ a {
     font-weight: 500;
     font-size: 1.4rem;
     text-align: center;
-    color: #FFF;
+    color: var(--white-color);
 }
 
 .btn:hover {
@@ -138,7 +141,7 @@ a {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.78;
-    color: #5A6473;
+    color: var(--text-color);
 }
 
 .hero-wrap .hero-cta {
@@ -205,7 +208,7 @@ a {
     font-size: 3.5rem;
     line-height: 1;
     text-align: center;
-    color: #000339;
+    color: var(--title-color);
 }
 
 .guides .sub-title::before {
@@ -217,7 +220,7 @@ a {
     transform: translateX(-50%);
     width: 41px;
     height: 4px;
-    background: #000339;
+    background: var(--title-color);
     border-radius: 12px;
 }
 
@@ -229,7 +232,7 @@ a {
     font-size: 1.6rem;
     line-height: 1.88;
     text-align: center;
-    color: #5A6473;
+    color: var(--text-color);
 }
 
 .list-guide {
@@ -284,7 +287,7 @@ a {
     font-weight: 600;
     font-size: 3.5rem;
     line-height: 1;
-    color: #000339;
+    color: var(--title-color);
 }
 
 .featured .row {
@@ -297,7 +300,7 @@ a {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.88;
-    color: #5A6473;
+    color: var(--text-color);
 }
 
 .featured .link {
@@ -320,7 +323,7 @@ a {
 
 .featured .item {
     flex: 1;
-    background: #fff;
+    background: var(--white-color);
     border-radius: 12px;
 }
 
@@ -340,7 +343,7 @@ a {
     font-weight: 600;
     font-size: 2rem;
     line-height: 1.5;
-    color: #000339;
+    color: var(--title-color);
 }
 
 .featured .item .desc {
@@ -408,14 +411,14 @@ a {
     width: 239px;
     padding: 45px 22px 40px;
     border-radius: 0px 0px 12px 12px;
-    background-color: #fff;
+    background-color: var(--white-color);
 }
 
 .stats-trend .value {
     font-weight: 700;
     font-size: 2.6rem;
     letter-spacing: 0.01em;
-    color: #000339;
+    color: var(--title-color);
 }
 
 .stats-trend .icon {
@@ -461,7 +464,7 @@ a {
     font-weight: 450;
     font-size: 0.7rem;
     letter-spacing: -0.02em;
-    color: #FFF;
+    color: var(--white-color);
 }
 
 .stats .avatar:first-child {
@@ -483,7 +486,7 @@ a {
     font-weight: 600;
     font-size: 3.5rem;
     line-height: 1.29;
-    color: #000339;
+    color: var(--title-color);
 }
 
 .stats .info .sub-title::before {
@@ -495,7 +498,7 @@ a {
     width: 41px;
     height: 4px;
     border-radius: 12px;
-    background: #000339;
+    background: var(--title-color);
 }
 
 .stats .info .desc {
@@ -504,7 +507,7 @@ a {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.88;
-    color: #5A6473;
+    color: var(--text-color);
 }
 
 .stats .row-qty {
@@ -549,7 +552,7 @@ a {
     font-weight: 600;
     font-size: 3.5rem;
     line-height: 1.5;
-    color: #FFF;
+    color: var(--white-color);
 }
 
 .subscription .desc {
@@ -557,13 +560,13 @@ a {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.88;
-    color: #FFF;
+    color: var(--white-color);
 }
 
 .subscription .btn {
     margin-top: 20px;
     min-width: 151px;
-    background-color: #fff;
+    background-color: var(--white-color);
     color: #002366;
 }
 
