@@ -1,4 +1,4 @@
-## Project 01 - Bensik.
+## Project 01 - Bensik. (Landing Page Basic)
 
 - Language: HTML/CSS
 - Javascript: (Update coming soon...)
