@@ -19,5 +19,5 @@ Get a local copy up and running in a few steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/hgiang15/project-html-css_01.git
+   git clone https://github.com/HGiang15/HTML-CSS_LandingPage_01.git
    ```
