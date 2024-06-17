@@ -4,7 +4,7 @@ Welcome to **Bensik**, a beautifully designed landing page created with HTML and
 
 ## 🚀 Live Demo
 
-Experience the live demo [here](https://hgiang15.github.io/HTML-CSS_LandingPage_01/).
+Experience the live demo [here](https://hgiang15.github.io/HTML-CSS-JS_LandingPage_01/).
 
 ## ✨ Features
 
