@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/css/login-register.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- Đăng nhập -->
+        <form action="" method="POST" class="form" id="form-2">
+            <h3 class="heading">LOGIN</h3>
+            <p class="desc">Study every day to grow ❤️</p>
+
+            <div class="spacer"></div>
+
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input id="password" name="password" type="text" placeholder="Nhập mật khẩu" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <button class="form-submit">Login</button>
+            <div class="login">
+                <a href="./signup.html">Register (if you don't have an account)</a>
+                <br>
+                <a href="./index.html">Back Home</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="./assets/js/validator.js"></script>
+    <script>
+        // Output Mong muốn khi sd
+        Validator({
+            form: '#form-2',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isEmail('#email'),
+                Validator.minLength('#password', 6),
+            ],
+            onSubmit: function (data) {
+                // call API
+                console.log(data);
+            }
+        });
+    </script>
+</body>
+
+</html>

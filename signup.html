@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./assets/css/login-register.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <form action="" method="POST" class="form" id="form-1">
+            <h3 class="heading">Registered member</h3>
+            <p class="desc">Study every day to grow ❤️</p>
+
+            <div class="spacer"></div>
+
+            <div class="form-group">
+                <label for="fullname" class="form-label">Fullname</label>
+                <input id="fullname" name="fullname" type="text" placeholder="VD: Hoàng Giang" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input id="password" name="password" type="text" placeholder="Nhập mật khẩu" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password_confirmation" class="form-label">Re-password</label>
+                <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu"
+                    type="text" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <!-- File -->
+            <div class="form-group">
+                <label for="avatar" class="form-label">Avatar</label>
+                <input id="avatar" name="avatar" type="file" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <!-- Select -->
+            <div class="form-group">
+                <label for="province" class="form-label">Province/City</label>
+                <select id="province" name="province" class="form-control">
+                    <option value="">-- Select Province/City</option>
+                    <option value="hni">Ha Noi</option>
+                    <option value="hpg">Hai Phong</option>
+                    <option value="hpg">Nam Dinh</option>
+                    <option value="hpg">Thanh Hoa</option>
+                    <option value="hpg">Quang Ninh</option>
+                </select>
+                <span class="form-message"></span>
+            </div>
+
+            <!-- checkbox or radio -->
+            <div class="form-group">
+                <label for="gender" class="form-label">Sex</label>
+                <div class="form-gender">
+                    <input name="gender" type="radio" value="Male" class="form-control"><span>Male</span>
+                </div>
+                <div class="form-gender">
+                    <input name="gender" type="radio" value="Female" class="form-control"><span>Female</span>
+                </div>
+                <div class="form-gender">
+                    <input name="gender" type="radio" value="Other" class="form-control"><span>Other</span>
+                </div>
+                <span class="form-message"></span>
+            </div>
+
+            <button class="form-submit">Register</button>
+            <div class="login">
+                <a href="./login.html">Login (Once you have an account)</a>
+                <br>
+                <a href="./index.html">Back Home</a>
+            </div>
+        </form>
+
+    </div>
+
+    <script src="./assets/js/validator.js"></script>
+    <script>
+
+        // Output Mong muốn khi sd
+        Validator({
+            form: '#form-1',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#fullname', 'Please enter your full name'),
+                // Validator.isRequired('#email'),
+                Validator.isEmail('#email'),
+                Validator.isRequired('#avatar'),
+                Validator.minLength('#password', 6),
+                Validator.isRequired('#password_confirmation'),
+                Validator.isRequired('input[name="gender"]'),
+                Validator.isRequired('#province'),
+                Validator.isConfirmed('#password_confirmation', function () {
+                    return document.querySelector('#form-1 #password').value
+                }, 'Re-entered password is incorrect'),
+            ],
+            onSubmit: function (data) {
+                // call API
+                console.log(data);
+            }
+        });
+    </script>
+</body>
+
+</html>

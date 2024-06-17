@@ -90,7 +90,8 @@ a {
     padding: 8px 14px;
 }
 
-.navbar ul a:hover {
+.navbar ul .item-link:hover,
+.navbar ul .item-link.active {
     text-decoration: underline;
 }
 
