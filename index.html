@@ -33,23 +33,34 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- PC Header -->
     <header class="fix-header">
         <div class="content">
             <nav class="navbar">
+                <!-- Tablet/Mobile menu -->
+                <label for="menu-checkbox" class="toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </label>
+
                 <!-- Logo -->
-                <a href="#"><img src="./assets/icons/logo.svg" alt="Besnik."></a>
+                <a class="logo" href="#"><img src="./assets/icons/logo.svg" alt="Besnik."></a>
 
                 <!-- Navigation -->
-                <ul>
+                <ul id="pc-nav">
                     <li class="item"><a class="item-link active" href="#">Home</a></li>
                     <li class="item"><a class="item-link" href="#services">Services</a></li>
                     <li class="item"><a class="item-link" href="#features">Features</a></li>
                     <li class="item"><a class="item-link" href="#resources">Resources</a></li>
                     <li class="item"><a class="item-link" href="#contact">Contact</a></li>
+                    <li class="item show-on-mobile separate"><a class="item-link" href="#contact">Sign in</a></li>
+                    <li class="item show-on-mobile"><a class="item-link" href="#contact">Sign up</a></li>
                 </ul>
 
                 <!-- Action -->
@@ -58,6 +69,23 @@
                     <a href="./signup.html" class="btn action-btn">Sign up</a>
                 </div>
             </nav>
+        </div>
+    </header>
+
+    <!-- Tablet/Mobile Header -->
+    <header class="mobile-header">
+        <input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden>
+
+        <!-- Overlay -->
+        <label for="menu-checkbox" class="menu-overlay"></label>
+
+        <!-- Menu content -->
+        <div class="menu-drawer">
+            <!-- Logo -->
+            <a href="#"><img src="./assets/icons/logo.svg" alt="Besnik."></a>
+
+            <!-- Navigation -->
+            <ul id="mobile-nav"></ul>
         </div>
     </header>
 
@@ -97,7 +125,7 @@
 
                 <div class="row row-desc">
                     <p class="desc">More than 45,000+ companies trust besnik</p>
-                    <p class="desc">5 Star Ratings (2k+ Review)</p>
+                    <p class="desc hide-on-mobile">5 Star Ratings (2k+ Review)</p>
                 </div>
 
                 <div class="images">
@@ -219,7 +247,7 @@
                                 <span class="label">68 Beds</span>
 
                                 <img src="./assets/icons/both.svg" alt="" class="icon">
-                                <span class="label">32 both</span>
+                                <span class="label">3 both</span>
 
                                 <img src="./assets/icons/sqft.svg" alt="" class="icon">
                                 <span class="label">3366 Sqft</span>
@@ -250,6 +278,10 @@
                         </div>
                     </div>
 
+                </div>
+
+                <div class="view-all show-on-mobile">
+                    <a href="#!" class="btn">View All Properties</a>
                 </div>
             </div>
         </div>
@@ -335,7 +367,7 @@
 
                 <div class="row row-qty">
                     <div class="qty-item">
-                        <strong class="qty">2,500</strong>
+                        <strong class="qty">2,500+</strong>
                         <p class="qty-desc">Homes For Sale</p>
                     </div>
 

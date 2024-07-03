@@ -8,8 +8,8 @@ Experience the live demo [here](https://hgiang15.github.io/HTML-CSS-JS_LandingPa
 
 ## ✨ Features
 
-- **Responsive Design**: Update Comming Soon...
-- **Javascript**: Update Comming Soon...
+- **Responsive Design**: Simple and effective
+- **Javascript**: Simple and effective
 - **Modern Aesthetic**: Clean and stylish design.
 - **Easy Customization**: Simple to modify and expand.
 
@@ -33,7 +33,7 @@ Bensik is a versatile and modern landing page designed to meet the needs of vari
 ## 🌟 Our Services
 
 - **Web Development**: Comprehensive solutions for creating stunning and functional websites.
-- **Digital Marketing**:  Strategies to enhance your online presence and reach your target audience.
+- **Digital Marketing**: Strategies to enhance your online presence and reach your target audience.
 - **Graphic Design**: Creative design services to make your brand stand out.
 - **Consulting**: Expert advice to help you navigate the digital landscape and achieve your business goals.
 
