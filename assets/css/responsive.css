@@ -210,7 +210,8 @@
         justify-content: space-between;
     }
 
-    .bell-wrap svg {
+    .bell {
+        display: block;
         width: 20px;
     }
 
