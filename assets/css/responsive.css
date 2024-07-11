@@ -58,6 +58,19 @@
         transition: 0.5s ease;
     }
 
+    .menu-drawer .x-mark svg {
+        width: 20px;
+    }
+
+    .menu-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-drawer .x-mark svg {
+        width: 20px;
+    }
+
     .menu-drawer ul {
         margin-top: 32px;
     }
