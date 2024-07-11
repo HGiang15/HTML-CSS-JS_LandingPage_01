@@ -206,6 +206,14 @@
         display: none;
     }
 
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .bell-wrap svg {
+        width: 20px;
+    }
+
     /* -- Hero -- */
     .hero-wrap {
         height: calc(100vh - 70px);
